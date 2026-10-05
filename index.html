@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Laboratório de programação: escreva HTML, CSS e JavaScript e visualize seu site.">
+  <title>Laboratório Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><span class="symbol" aria-hidden="true">&lt;/&gt;</span><div><h1>Laboratório Web</h1><p>HTML · CSS · JavaScript</p></div></div>
+    <span class="badge">ESPAÇO DE CRIAÇÃO</span>
+  </header>
+  <main>
+    <section class="toolbar" aria-label="Controles do projeto">
+      <div><h2>Seu código, na prática.</h2><p>Cole os códigos nos campos e clique em visualizar.</p></div>
+      <button id="run" class="primary" type="button"><span aria-hidden="true">▶</span> Visualizar site <kbd>Ctrl ↵</kbd></button>
+    </section>
+    <div class="editors">
+      <section class="editor html"><div class="editor-heading"><label for="html">HTML</label><span>01 / estrutura</span></div><textarea id="html" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="html-help" placeholder="Cole seu HTML aqui…"></textarea><p id="html-help">Conteúdo da página ou documento HTML completo.</p></section>
+      <section class="editor css"><div class="editor-heading"><label for="css">CSS</label><span>02 / aparência</span></div><textarea id="css" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="css-help" placeholder="Cole seu CSS aqui…"></textarea><p id="css-help">Cole as regras sem as tags &lt;style&gt;.</p></section>
+      <section class="editor js"><div class="editor-heading"><label for="js">JavaScript</label><span>03 / interação</span></div><textarea id="js" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="js-help" placeholder="Cole seu JavaScript aqui…"></textarea><p id="js-help">Cole o código sem as tags &lt;script&gt;.</p></section>
+    </div>
+    <div class="actions"><div class="button-group"><button id="example" type="button">Carregar exemplo</button><button id="download" type="button">Baixar site (.html)</button><button id="clear" class="quiet" type="button">Limpar campos</button></div><span id="save-status" role="status">Rascunho neste navegador</span></div>
+    <aside class="preview-note"><strong>Visualização em outra janela</strong><p id="preview-status" role="status">Clique em Visualizar site para abrir seu projeto.</p><p>Após editar, clique novamente para atualizar a janela do projeto.</p></aside>
+    <footer><span>Seu rascunho fica salvo apenas neste navegador. Em computadores compartilhados, limpe os campos ao terminar.</span><span>Ctrl/Cmd + Enter: abrir visualização</span></footer>
+  </main>
+</body>
+</html>

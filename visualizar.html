@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu projeto · Laboratório Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="visualizar.js" defer></script>
+</head>
+<body class="viewer">
+  <header class="viewer-bar">
+    <div><strong>Meu projeto</strong><span id="size" aria-label="Dimensões da área de visualização"></span></div>
+    <div class="button-group"><button id="back" type="button">Voltar ao editor</button><button id="stop" type="button">Parar visualização</button></div>
+  </header>
+  <p id="viewer-status" role="status">Aguardando o projeto. Abra esta janela pelo botão Visualizar site do laboratório.</p>
+  <div id="frame-host"><iframe id="preview-frame" title="Site criado pelo aluno" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div>
+  <div id="errors" role="status" hidden></div>
+</body>
+</html>
